@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2008 Francisco Muñoz 'Hermes' <www.elotrolado.net>
+ Copyright (c) 2008 Francisco Muï¿½oz 'Hermes' <www.elotrolado.net>
  All rights reserved.
  
  Proper (standard) vorbis usage by Tantric, 2009
@@ -268,7 +268,7 @@ static private_data_ogg private_ogg;
 
 // OGG thread control
 
-#define STACKSIZE		8192
+#define STACKSIZE		32*1024
 
 static u8 oggplayer_stack[STACKSIZE];
 static lwpq_t oggplayer_queue = LWP_TQUEUE_NULL;

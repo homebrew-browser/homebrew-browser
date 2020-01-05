@@ -1,7 +1,7 @@
 /*
 
 Homebrew Browser -- a simple way to view and install Homebrew releases via the Wii
-Version: 0.3.9e
+Version: 0.4.0-SNAPSHOT
 
 Author: teknecal
 Created: 24/06/2008
@@ -257,7 +257,7 @@ void close_windows() {
 }
 
 int main(int argc, char **argv) {
-	//add_to_log("Booting Homebrew Browser v0.3.9");
+	//add_to_log("Booting Homebrew Browser v0.4.0-SNAPSHOT");
 	
 	initialise();
 	initialise_reset_button();
@@ -268,7 +268,7 @@ int main(int argc, char **argv) {
 	//add_to_log("Time is %li", current_time);
 	
 	printf("\x1b[2;0H");
-	printf("Homebrew Browser v0.3.9e\n");
+	printf("Homebrew Browser v0.4.0-SNAPSHOT\n");
 	
 	u32 temp_esid;
 	ES_GetDeviceID(&temp_esid);
@@ -815,6 +815,7 @@ int main(int argc, char **argv) {
 		}
 		
 		GRRLIB_FillScreen(0xFFE1E1E1);
+		
 		GRRLIB_DrawImg(0, 0, 640, 480, background_img, 0, 1, 1, 255);
 		
 		if (in_menu == false && in_help == false) {

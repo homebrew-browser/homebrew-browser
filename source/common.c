@@ -49,6 +49,7 @@ const DISC_INTERFACE* usb = &__io_usbstorage;
 #define METHOD_SD 1
 #define METHOD_USB 2
 
+#define STACKSIZE 32*1024
 #define FONTSIZE_SMALL 18
 #define BUFFER_SIZE 1024
 #define NET_BUFFER_SIZE 1024
@@ -240,7 +241,7 @@ static void *run_reset_thread(void *arg) {
 }
 
 u8 initialise_reset_button() {
-	s32 result = LWP_CreateThread(&reset_thread, run_reset_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&reset_thread, run_reset_thread, NULL, NULL, STACKSIZE, 80);
 	if (result == 0) SYS_SetResetCallback(reset_called);
 	return !result;
 }
@@ -253,7 +254,7 @@ static void *run_www_thread(void *arg) {
 }
 
 u8 initialise_www() {
-	s32 result = LWP_CreateThread(&www_thread, run_www_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&www_thread, run_www_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -511,7 +512,7 @@ static void *run_icons_thread(void *arg) {
 }
 
 u8 load_icons() {
-	s32 result = LWP_CreateThread(&icons_thread, run_icons_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&icons_thread, run_icons_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -987,7 +988,7 @@ static void *run_download_thread(void *arg) {
 }
 
 u8 initialise_download() {
-	s32 result = LWP_CreateThread(&download_thread, run_download_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&download_thread, run_download_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -1318,7 +1319,7 @@ static void *run_delete_thread(void *arg) {
 }
 
 u8 initialise_delete() {
-	s32 result = LWP_CreateThread(&delete_thread, run_delete_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&delete_thread, run_delete_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -1431,7 +1432,7 @@ static void *run_rating_thread(void *arg) {
 }
 
 u8 initialise_rating() {
-	s32 result = LWP_CreateThread(&rating_thread, run_rating_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&rating_thread, run_rating_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -1548,7 +1549,7 @@ static void *run_update_rating_thread(void *arg) {
 }
 
 u8 initialise_update_rating() {
-	s32 result = LWP_CreateThread(&update_rating_thread, run_update_rating_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&update_rating_thread, run_update_rating_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -1603,7 +1604,7 @@ static void *run_music_thread(void *arg) {
 }
 
 u8 initialise_music() {
-	s32 result = LWP_CreateThread(&music_thread, run_music_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&music_thread, run_music_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -1774,7 +1775,7 @@ static void *run_request_thread(void *arg) {
 }
 
 u8 initialise_request() {
-	s32 result = LWP_CreateThread(&request_thread, run_request_thread, NULL, NULL, 0, 80);
+	s32 result = LWP_CreateThread(&request_thread, run_request_thread, NULL, NULL, STACKSIZE, 80);
 	return result;
 }
 
@@ -2744,8 +2745,9 @@ void initialise() {
 	VIDEO_SetNextFramebuffer(xfb[0]);
 	VIDEO_SetBlack(FALSE);
 	VIDEO_Flush();
-	VIDEO_WaitVSync();
+	VIDEO_WaitVSync();	
 	if(vmode->viTVMode&VI_NON_INTERLACE) VIDEO_WaitVSync();
+
 	MP3Player_Init();
 	// Initialise the audio
 	ASND_Init();

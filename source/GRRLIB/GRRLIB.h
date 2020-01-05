@@ -14,7 +14,7 @@
 #include <math.h>
 #include <gccore.h>
 
-#include "../libpng/pngu/pngu.h"
+#include "pngu.h"
 
 /**** FREETYPE START ****/
 extern void GRRLIB_InitFreetype();

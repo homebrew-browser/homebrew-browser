@@ -22,10 +22,14 @@ SOURCES		:= \
 	source/gfx \
 	source/GRRLIB \
 	source/GRRLIB/fonts \
-	source/unzip \
-	libpng/pngu
+	source/pngu \
+	source/unzip	
 DATA		:=	data  
-INCLUDES	:=	source
+INCLUDES	:=	\
+	source \
+	source/pngu \
+	lib/freetype/include \
+	lib/png/include
 
 #---------------------------------------------------------------------------------
 # options for code generation
@@ -47,7 +51,7 @@ LIBS := \
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
-LIBDIRS	:= $(CURDIR)
+LIBDIRS	:= $(CURDIR) lib/png lib/freetype
 
 #---------------------------------------------------------------------------------
 # no real need to edit anything past this point unless you need to add additional
