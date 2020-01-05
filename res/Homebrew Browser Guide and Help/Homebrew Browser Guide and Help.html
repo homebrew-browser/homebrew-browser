@@ -1,0 +1,832 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="CodeMii" />
+<meta name="keywords" content="" />
+<meta name="description" content="Homebrew Browser Guide" />
+<title>Homebrew Browser Guide</title>
+
+<link href="pictures/stylesheet.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+</head>
+
+<body id="phpbb" class="section-docs">
+
+<div id="wrap">
+	
+<!-- BEGIN DOCUMENT -->
+
+<p><b><font face="Trebuchet MS" style="font-size: 2em">Homebrew Browser Guide</font></b></p>
+<p>Welcome to the Homebrew Browser guide. In this guide we sometimes abbreviate 
+HomeBrew Browser as HBB. This guide will help you in running HBB and 
+show you how to use all the features HBB has to offer as well as offer some 
+suggestions to common issues. Thanks to <a href="http://www.phpbb.com">phpBB</a> 
+for this document style and to WiiBrew for the controller images. </p>
+<p>Last updated: 22 Feb 2011</p>
+
+	<h1>Table of Contents</h1>
+
+	<div class="paragraph menu">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="content">
+
+			<ol>
+				<li><a href="#install">Installing HBB</a></li>
+				<li><a href="#usehbb">Using HBB</a><ol style="list-style-type: lower-roman;">
+					<li><a href="#load">Loading HBB</a></li>
+					<li><a href="#update">Updating HBB</a></li>
+					<li><a href="#learn">Learning the interface</a></li>
+					<li><a href="#viewapp">Viewing applications</a></li>
+					<li><a href="#sort">Sort the Homebrew list</a></li>
+					<li><a href="#rate">Rating applications</a></li>
+					<li><a href="#download">Download, update and delete applications</a></li>
+					<li><a href="#queue">Download, update and delete queue</a></li>
+					<li><a href="#control">Using the controllers</a></li>
+					<li><a href="#menu">Accessing the menu</a></li>
+				</ol>
+				</li>
+				<li><a href="#setting">HBB Settings</a><ol style="list-style-type: lower-roman;">
+					<li><a href="#showspace">Show free space</a></li>
+					<li><a href="#checkspace">Check free space</a></li>
+					<li><a href="#hideapps">Hide installed apps</a></li>
+					<li><a href="#retrieverate">Retrieve my ratings</a></li>
+					<li><a href="#music">Background music</a></li>
+					<li><a href="#rumble">Rumble</a></li>
+					<li><a href="#updateicon">Update icons</a></li>
+					<li><a href="#offline">Offline mode</a></li>
+					<li><a href="#tooltip">Tool tips</a></li>
+					<li><a href="#confirmcancel">Confirm cancelling</a></li>
+					<li><a href="#poweroff">Wiimote Power off</a></li>
+					<li><a href="#updateapps">Updated Apps Pop-up</a></li>
+					<li><a href="#sdcard">Use SD card</a></li>
+					<li><a href="#repo">Use Other Repositories</a></li>
+					<li><a href="#customcat">Custom category</a></li>
+					<li><a href="#customsort">Custom sort</a></li>
+					<li><a href="#disusb">Disable USB mount</a></li>
+					<li><a href="#dischar">Disable the character in the Menu</a></li>
+					<li><a href="#usewiimotelikegc">Use Wiimote like GC controller</a></li>
+					<li><a href="#updatehbb">Check for updates</a></li>
+					<li><a href="#2ndserver">Use secondary server</a></li>
+				</ol>
+				<li><a href="#issues">Common issues with HBB</a><ol style="list-style-type: lower-roman;">
+					<li><a href="#network">Can&#39;t initialise network / Read errors</a></li>
+					<li><a href="#mount">Issues mounting my SD or USB device</a></li>
+					<li><a href="#ipadd">Can&#39;t find the IP of CodeMii</a></li>
+					<li><a href="#tryrepo">Freezing when trying a repository</a></li>
+					<li><a href="#updatefail">Updating HBB fails</a></li>
+					<li><a href="#checkicon">Freezing checking icons</a></li>
+					<li><a href="#weirdline">Weird lines before loading the graphic user interface</a></li>
+					<li><a href="#codedump">Crashing to numbers screen (code dump) when downloading</a></li>
+					<li><a href="#incorfreespace">Free space detected is incorrect</a></li>
+					<li><a href="#nodownload">Applications don&#39;t download / download button won&#39;t work</a></li>
+				</ol></li>
+				<li>
+				<a href="#help">Getting help with HBB</a></li>
+			</ol>
+
+		</div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr />
+
+<a name="install"></a><h2>1. Installing HBB</h2>
+<div class="paragraph">
+		<div class="inner">
+
+		<div class="content">
+
+	<p>Installing the Homebrew Browser is quite simple once you have installed 
+	the <a href="http://www.wiibrew.org/wiki/Homebrew_Channel">Homebrew Channel.</a></p>
+	<ol>
+		<li><a href="http://www.codemii.com/download/">Download</a> the latest 
+		version of the Homebrew Browser.</li>
+		<li>Extract the homebrew browser zip file.</li>
+		<li>Copy the homebrew_browser folder to the /apps folder on your SD/USB 
+		device. (Please create the /apps directory on the root of your SD/USB 
+		device if it doesn&#39;t exist)</li>
+		<li>Ensure that the little write lock switch on your SD/USB device card 
+		is off.</li>
+		<li>Launch HBB via the Homebrew Channel.</li>
+	</ol>
+
+</div>
+
+<div class="back2top"><a href="#wrap" class="top">Back to Top</a></div>
+
+<span class="corners-bottom"><span></span></span></div></div>
+
+	<hr />
+
+	<a name="usehbb"></a><h2>2. Using HBB</h2>
+
+	<div class="paragraph">
+		<div class="inner">
+			<div class="content">
+
+	<a name="load"></a><h3>2.i. Loading HBB</h3>
+
+	<p>When the Homebrew Browser is loaded, it will show a console screen (white 
+	text on a black screen) which shows you everything it&#39;s doing. This screen 
+	is useful for debugging and knowing where issues lie.</p>
+	<p><img border="0" src="pictures/hbb_startup.jpg" width="508" height="283"></p>
+	<p>As HBB loads it will do the following: (the text in brackets is what HBB 
+	says as it prints to the screen)</p>
+	<ol>
+		<li>Initialise your Wii&#39;s network (Waiting for network to 
+		initialise...)</li>
+		<li>Mount your SD/USB devices (Attempting to mount SD card...)</li>
+		<li>Load your settings if they exist (Settings loaded from SD card.)</li>
+		<li>Attempt to query the IP address of CodeMii.com (Requesting IP 
+		address of www.codemii.com)</li>
+		<li><strike>Check to see that the CodeMii server is who it says it is (Server 
+		check passed)</strike> - removed as of v0.3.9c</li>
+		<li>Download the Repositories list (Requesting repositories list...)</li>
+		<li>Download the Homebrew list which contains all the applications 
+		(Requesting Homebrew List...)</li>
+		<li>Parse the Homebrew list (Parsing Homebrew List)</li>
+		<li>Check for any missing files including meta.xml, icon.png and 
+		loop.mod</li>
+		<li>Check for Homebrew Browser updates (Checking for Homebrew Browser 
+		updates...)</li>
+		<li>Check the HBB temporary icon image files<br>
+		If it&#39;s the first time ever that you&#39;ve run the HBB or you have less 
+		than 200 image files, it will begin to download a zip file containing 
+		icon image files of each application. At the time of this writing this 
+		guide there are over 300 applications, so this zip file contains those 
+		application&#39;s image files.&nbsp; (Downloading zip file containing 
+		current image files)<br>
+		<br>
+		It&#39;s highly recommended to let HBB complete this process, otherwise HBB 
+		will need to download one image file at a time which is very time 
+		consuming.</li>
+		<li>Check to see if there is any news about which applications have been 
+		updated (Checking for new/updated applications...)</li>
+		<li>Load to the graphic user interface where you can now start 
+		using it<br>
+&nbsp;</li>
+	</ol>
+	<p>As you can see HBB does a whole lot of things before starting up.</p>
+
+	<a name="update"></a><h3>2.ii. Updating HBB</h3>
+
+	<p>You can update the Homebrew Browser via two methods. The first way is to 
+	update manually which involves downloading the latest version of the 
+	Homebrew Browser via the CodeMii website and then installing HBB as <a href="#install">shown 
+	above</a>.</p>
+	<p>The other way which is the easiest way is to let the Homebrew Browser 
+	update itself. When the Homebrew Browser loads, it checks to see if there 
+	are any updates. If there is an update, HBB will show you the version number 
+	and the new changes made to that version (example below).</p>
+	<p><i>v0.3.7<br>
+	- Compiled with DevKitPPC r19, libogc 1.8.1 and libfat 1.0.6 <br>
+	- Expanded the size of the HBB updated applications display when starting up
+	<br>
+	- Added homebrew sorter support <br>
+	- Disabled write test as some cards failed it <br>
+	- Fixed some bugs (check the description in HBB for more info)</i></p>
+	<p>HBB will ask you if you want to update or cancel. If you proceed to 
+	update, it will download the new boot.dol, meta.xml and icon.png files. Once 
+	the update is complete, it will take you back to the Homebrew Channel where 
+	you can load up the new HBB version.</p>
+	<p>If for any reason it fails, it will tell you so and will restore the 
+	previous version of HBB for you. You should try to update again or manually 
+	install the new version yourself; but before doing so, please <a href="#help">let us know</a> 
+	the issue you experienced.</p>
+
+	<a name="learn"></a><h3>2.iii. Learning the interface</h3>
+
+	<p>The Homebrew Browser should be self-explanatory however it can be 
+	daunting running software for the first time. </p>
+	<p><img border="0" src="pictures/hbb_screen.jpg" width="630" height="490"></p>
+	<p>From the top we can see 5 categories; these categories include Demos, Emulators, Games, Media and Utilities.
+
+You are able to change categories by selecting a category from the list (by 
+	pressing A) or move one category left or one category right by pressing the Dpad left 
+	or right on the Wiimote.
+
+	It may take a few moments for it to load the new category.</p>
+	<p>On the top right we can see 2 buttons, one looks like a letter/card and 
+	the other is a question mark. The letter/card when pressed allows you to see 
+	what homebrew applications you have on your SD/USB device. The question mark 
+	is the help menu.</p>
+	<p>Going down, we can see 4 homebrew applications shown, this section is 
+	what we will refer to as the homebrew list. When moving over the 
+	applications in the homebrew list, they will be highlighted at which time 
+	you press the A button to bring up more information about that application 
+	including a download button. You can scroll through the list be holding B 
+	and moving the Wiimote down or up or you can press the Dpad down and up.</p>
+	<p>From the homebrew list, you can see little icons to the right of each 
+	application. There is a &quot;New&quot; icon which shows this application is new or 
+	has been updated. If an application is installed you are shown a tick icon. 
+	If the application is outdated you are shown a question mark icon. If the 
+	application is set to be queued to be downloaded using the download queue 
+	you are shown a plus icon.</p>
+	<p>On the right you can see 5 icons, the first 4 are for sorting the 
+	homebrew list (e.g. by name, downloads, etc) and the last icon is for 
+	accessing the download queue.</p>
+	<p>On the bottom we can see text saying &quot;Checking icon xxx/xxx&quot;. The 
+	Homebrew Browser needs to load all the icons of each homebrew application so 
+	it can display the icon next to the name of each application; so in order to 
+	do this it loads each icon into memory so it can be accessed quickly. The 
+	process of checking icons can be time consuming but you can definitely use 
+	HBB when it&#39;s doing so (scrolling and changing categories may be slower). If 
+	an icon file isn&#39;t present, HBB will download it.</p>
+	<p>The last thing we have is on the bottom right which is text that shows 
+	how such free space your SD/USB device has left.</p>
+	<p><img border="0" src="pictures/hbb_tick.jpg" width="497" height="73"><br>
+	We can see if an application is installed by seeing the tick.</p>
+	<p><img border="0" src="pictures/hbb_question.jpg" width="504" height="79"><br>
+	If an the Homebrew Browser believes that there is an updated version of an 
+	application you have installed it shows the question mark.</p>
+	
+	<a name="viewapp"></a><h3>2.iv. Viewing applications</h3>
+
+	<p>When you choose an application you are interested in, the following information is shown about the application. </p>
+	<p><img border="0" src="pictures/hbb_app.jpg" width="558" height="326"></p>
+	<ul>
+		<li>Name</li>
+	<li>Brief description</li>
+		<li>Author</li>
+	<li>Version</li>
+		<li>Size</li>
+	<li>Date</li>
+		<li>SDHC support</li>
+		<li>Download count which is the total amount of downloads for the application. 
+	</li>
+	<li>Rating which shows the average user rating for the application
+
+	</li>
+	<li>Controllers shows the controllers supported by the application</li>
+	</ul>
+
+		<p><br>
+		You are also shown the download or update (if you have the application 
+		installed) and delete buttons.</p>
+
+	<a name="sort"></a><h3>2.v. Sort the Homebrew list</h3>
+
+	<p>As the homebrew list contains more and more applications it&#39;s important 
+	to be able to sort homebrew applications. You are able to sort the list by 
+	name, date, downloads and rating. </p>
+	<p><img border="0" src="pictures/name.png" width="36" height="36"><br>
+	Name icon – This icon sorts the list by name.</p>
+	<p><img border="0" src="pictures/date.png" width="36" height="35"> <br>
+	Date icon – This icon sorts the list by date format. By default the listings are sorted by latest releases.
+
+</p>
+	<p><img border="0" src="pictures/star.png" width="36" height="35"><br>
+	Star icon – This icon sorts the list by popularity. Popularity is determined by the ratings that users give to an application.
+
+</p>
+	<p><img border="0" src="pictures/thumbs_up.png" width="36" height="34"><br>
+	Thumbs up icon – This iron sorts the list by the number of times all users have downloaded the application.</p>
+	<p>
+	<img border="0" src="pictures/sort_arrow_down.png" width="16" height="16"><img border="0" src="pictures/sort_arrow_up.png" width="16" height="16">When select a sort method you will see a small up and down arrow beside 
+	that sort method&#39;s icon. These arrows represent how the list is being sorted.
+
+When clicking an icon for the first time, it will sort the list highest to lowest. When clicking the icon again, it sorts the list lowest to highest.
+
+E.g. Selecting date two times will sort the list oldest (top) to latest (bottom).
+
+</p>
+
+	<a name="rate"></a><h3>2.vi. Rating applications</h3>
+
+	<p>You are able to give applications ratings between 1 to 5 stars (higher is 
+	better).
+
+Your rating will be sent and stored on our server which will calculate the overall rating of the application once every 24 hours.
+
+</p>
+	<p><img border="0" src="pictures/hbb_rate.jpg" width="226" height="69"></p>
+	<p>To give an application a rating, click on the application from the list, and select the 
+	&quot;Your Rating&quot; text or the stars underneath.
+
+You will then be shown the stars and allowed to select a rating.
+
+Once done, the rating will be sent to the server. If the rating is accepted, you will see your own rating on the application.</p>
+
+	<a name="download"></a><h3>2.vii. Download, update and delete applications</h3>
+
+	<p>The Homebrew Brower’s main function is to allow you to download applications from the internet using your Wii.</p>
+	<p><img border="0" src="pictures/hbb_download.jpg" width="451" height="70"><br>
+	Once you select an application, it shows you information on that application and you are then able to download the application by pressing the Download button.
+
+You will be shown a progress bar showing the progress of the download which may take some time.
+
+	After it&#39;s downloaded the zip file, it will extract the zip file whilst 
+	giving you a progress on that too.</p>
+	<p>Once it has all being completed, the download button will disappear and the Delete button will become active.
+
+</p>
+	<p>You are able to update the applications installed on your SD/USB device by using the 
+	Update button.
+
+When a new version of an application comes out and you have an older version of that application installed, you will be able to press the update button which will download the latest version of that application for you.
+
+You will be shown a progress bar exactly the same as when downloading.
+
+</p>
+	<p>If you wish to remove an application from your SD/USB device you can easily do this by pressing the Delete button.
+
+The application will be deleted from your SD/USB device and on success the delete button will be faded out and the Download button will become active again.</p>
+	<p>A quick way to delete applications is to press the letter/card icon on 
+	the top right as it allows you to see all your homebrew applications that 
+	you have on your SD/USB device.</p>
+
+	<a name="queue"></a><h3>2.viii. Download, update and delete queue</h3>
+
+	<p>The Homebrew Browser allows you select applications which you wish to add in a queue to be downloaded. This queue is represented by the Download arrow 
+	found on the bottom right of the screen. </p>
+	<p><img border="0" src="pictures/hbb_plus.jpg" width="504" height="78"><br>
+	To add applications to the queue, in the homebrew list you press the Plus (+) button 
+	on the Wiimote when your cursor is over the application. This will bring up a Plus icon which shows that the application is in the queue.
+
+You can remove applications from the queue by pressing the Minus (-) button 
+	which will remove the Plus icon. </p>
+	<p><img border="0" src="pictures/download.png" width="36" height="36"><br>
+	Once you are ready to download applications, first view the queue by pressing the 
+	Download arrow. Here you will see all the applications ready to be 
+	downloaded.</p>
+	<p><img border="0" src="pictures/hbb_queue.jpg" width="443" height="303"><br>
+	To begin the automatic downloading of applications, press the download 
+	arrow again. Once you begin, you will be shown the amount of applications to be downloaded and the progress 
+	like you do when downloading applications yourself. Once completed, it will bring you back to the download queue where you will find that all your applications have a tick on them which mean that they are installed.
+
+</p>
+	<p>Updating your applications is similar to adding applications to the download 
+	queue.
+
+Once you are viewing your applications on the SD/USB device, you just click the 
+	download queue button and it will show all the applications which had 
+	question marks on them are now queued.
+
+To continue press the download queue button again and it will automatically 
+	update all applications which are out of date.
+
+Once finished, it will return you back to your applications installed list.</p>
+	<p><img border="0" src="pictures/hbb_delete.jpg" width="502" height="82"><br>
+	Deleting applications is once again similar to adding applications to the download 
+	queue. Instead of pressing the Plus (+) button you now press the Minus (-) 
+	button on each application to delete it. You press the download queue button 
+	twice like last time, and it will being to delete the applications you have 
+	selected from your SD/USB device.</p>
+	<p>You can do all 3 of these things at the same time.</p>
+
+	<a name="control"></a><h3>2.ix. Using the controllers</h3>
+
+	<p>Below are the controls available when HBB is starting up.</p>
+	<table border="1" width="28%" id="table1" style="border-width: 0">
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/8px-Wiimote.svg.png" width="8" height="30"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/43px-GCNController.svg.png" width="43" height="30"></td>
+			<td align="center"><b><font size="2">Action</font></b></td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/26px-ButtonA.svg.png" width="26" height="26"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/24px-GCNAButton.svg.png" width="24" height="24"></td>
+			<td align="center">Accept HBB update</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-Wiimote_B_button.svg.png" width="24" height="31"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/24px-GCNBButton.svg.png" width="24" height="24"></td>
+			<td align="center">Cancel download/extracting images on first run</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-Buttonhome.svg.png" width="24" height="24"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/24px-GCNStartButton.svg.png" width="24" height="24"></td>
+			<td align="center">Return to loader</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-WiimoteButton1.svg.png" width="24" height="24"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/24px-GCNYButton.svg.png" width="24" height="16"></td>
+			<td align="center">Work offline</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-WiimoteButton2.svg.png" width="24" height="24"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/16px-GCNXButton.svg.png" width="16" height="24"></td>
+			<td align="center">Revert to CodeMii repository</td>
+		</tr>
+	</table>
+	<p>Below are the controls available when HBB is in the graphic user 
+	interface.</p>
+	<table border="1" width="28%" id="table2" style="border-width: 0">
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/8px-Wiimote.svg.png" width="8" height="30"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/43px-GCNController.svg.png" width="43" height="30"></td>
+			<td align="center"><b><font size="2">Action</font></b></td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-Wiimote_Aim.svg.png" width="24" height="26"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/30px-GameCubeControlStick.svg.png" width="30" height="30"></td>
+			<td align="center">Move pointer</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-Wiimote_B_button.svg.png" width="24" height="31"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/30px-GCControlStickC.svg.png" width="30" height="30"></td>
+			<td align="center">Hold and move Wiimote down / up to scroll through list</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/26px-ButtonA.svg.png" width="26" height="26"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/24px-GCNAButton.svg.png" width="24" height="24"></td>
+			<td align="center">Click buttons</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-Wiimote_B_button.svg.png" width="24" height="31"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/24px-GCNBButton.svg.png" width="24" height="24"></td>
+			<td align="center">Cancel download/extract/delete</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/30px-Wii_Remote_D-Pad_Left.svg.png" width="30" height="30"> 
+			/ 
+			<img border="0" src="pictures/30px-Wii_Remote_D-Pad_Right.svg.png" width="30" height="30"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/30px-GC_D-Pad_Left.svg.png" width="30" height="30"> 
+			/
+			<img border="0" src="pictures/30px-GC_D-Pad_Right.svg.png" width="30" height="30"></td>
+			<td align="center">Previous / Next category</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/30px-Wii_Remote_D-Pad_Up.svg.png" width="30" height="30"> 
+			/
+			<img border="0" src="pictures/30px-Wii_Remote_D-Pad_Down.svg.png" width="30" height="30"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/30px-GC_D-Pad_Up.svg.png" width="30" height="30"> 
+			/
+			<img border="0" src="pictures/30px-GC_D-Pad_Down.svg.png" width="30" height="30"></td>
+			<td align="center">Scroll up and down the list slowly</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-Button-.svg.png" width="24" height="24">
+			<img border="0" src="pictures/24px-Buttonplus.svg.png" width="24" height="24"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/26px-GCNLButton.svg.png" width="26" height="11"> 
+			/
+			<img border="0" src="pictures/26px-GCNRButton.svg.png" width="26" height="11"></td>
+			<td align="center">Remove / Add application to queue</td>
+		</tr>
+		<tr>
+			<td width="73" align="center">
+			<img border="0" src="pictures/24px-Buttonhome.svg.png" width="24" height="24"></td>
+			<td width="74" align="center">
+			<img border="0" src="pictures/24px-GCNStartButton.svg.png" width="24" height="24"></td>
+			<td align="center">Menu<br>
+		Hold to return to loader</td>
+		</tr>
+	</table>
+
+	<a name="menu"></a><h3>2.x. Accessing the menu</h3>
+
+	<p>You can access the menu by pressing the Home button on your Wiimote. From 
+	the menu you can select to change your settings, reboot your Wii or return 
+	to the Homebrew Channel.</p>
+	<p><img border="0" src="pictures/hbb_menu.jpg" width="565" height="377"></p></div>
+
+		<div class="back2top"><a href="#wrap" class="top">Back to Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr />
+
+<a name="setting"></a><h2>3. HBB Settings</h2>
+
+	<div class="paragraph">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="content">
+
+	<p>You can access the settings by pressing the Home button on your Wiimote 
+	and selecting Settings.</p>
+	<p><img border="0" src="pictures/hbb_settings.jpg" width="512" height="359"></p>
+
+	<a name="showspace"></a><h3>3.i. Show SD card space</h3>
+
+	<p>If enabled, this option shows the free space of your SD/USB device on the bottom right of the screen.
+
+</p>
+	<a name="checkspace"></a><h3>3.ii. Check free space</h3>
+
+	<p>If enabled, before downloading applications your SD/USB device is checked to ensure there is 
+	enough free space. It is recommended that you disable this option if you have an SD/USB 
+	device of 4GB+ or if you experience that HBB reports incorrect free space. </p>
+	
+	<a name="hideapps"></a><h3>3.iii. Hide installed apps</h3>
+
+	<p>If enabled, the applications you have installed will be hidden from the 
+	lists. They will still viewable from the installed application list (top 
+	right letter/card icon). </p>
+	
+	<a name="retrieverate"></a><h3>3.iv. Retrieve my Rating </h3>
+
+	<p>If disabled, your ratings will not be retrieved from the server. You will 
+	still be able to rate applications.</p>
+	
+	<a name="music"></a><h3>3.v. Background Music</h3>
+
+	<p>Select this to turn on or off the background music.
+
+You can have your own background music by placing an MP3, OGG or MOD file in /apps/homebrew_browser/. 
+	It firstly looks for an MP3, then OGG and lastly an MOD file.</p>
+	
+	<a name="rumble"></a><h3>3.vi. Rumble</h3>
+	<p>Enable or disable the rumble on your Wiimote when moving your cursor over 
+	buttons</p>
+	
+	<a name="updateicon"></a><h3>3.vii. Update icon</h3>
+
+	<p>If enabled, the Homebrew Browser will always download the icon.png file 
+	when downloading applications. Please disable this option if you have your own custom icons, so they won’t get overwritten.</p>
+	
+	<a name="offline"></a><h3>3.viii. Offline mode</h3>
+
+	<p>Enabling offline mode means the Homebrew Browser will not initialise your network or use the network at all, good if you want to manage your applications.</p>
+	
+	<a name="tooltip"></a><h3>3.ix. Tool tips</h3>
+	<p>Enable or disable the tips which show you what buttons do what when moving your cursor over buttons.</p>
+	
+	<a name="confirmcancel"></a><h3>3.x. Confirm cancelling</h3>
+	<p>If enabled, HBB will prompt you to confirm you want to cancel a download 
+	when you press the B button when downloading applications.</p>
+
+	<a name="poweroff"></a><h3>3.xi. Wiimote Power off</h3>
+	<p>If enabled, the Wii can be turned of via the Wiimote by pressing the 
+	power button. Some users may have issues where HBB turns off the Wii 
+	automatically, if so please disable this option.</p>
+
+	<a name="updateapps"></a><h3>3.xii. Updated Apps Pop-up</h3>
+	<p>If enabled, HBB will show pop-up with added/updated applications if there 
+	are any available. It&#39;s a quick way to see what has been added to HBB.</p>
+	
+	<a name="sdcard"></a><h3>3.xiii. Use SD card</h3>
+	<p>Enable this option if you wish to download applications to your SD card 
+	otherwise turn this off if you wish to download applications to a USB 
+	device.</p>
+	
+	<a name="repo"></a><h3>3.xiv. Use Other Repositories</h3>
+	<p>HBB allows you to browse other repositories than the official one. This 
+	may be useful for experienced users as some repositories contain potentially 
+	dangerous applications. Another use for repositories is to allow developers 
+	to provide quick updates to their applications. Please restart HBB for this 
+	to take effect. When HBB is starting up, you will see it say &quot;Using 
+	repository: xxxx&quot;.</p>
+
+	<a name="customcat"></a><h3>3.xv. Custom category</h3>
+	<p>Allows you to select the starting category when HBB loads other than the 
+	default Games category.</p>
+
+		<a name="customsort"></a><h3>3.xvi. Custom sort</h3>
+	<p>Allows you to select the starting sort order when HBB loads other than 
+	the default sort by date.</p>
+	
+	<a name="disusb"></a><h3>3.xvii. Disable USB mount</h3>
+	<p>Allows you to disable mounting the USB device when HBB loads. This might 
+	be useful if HBB is unable to load the USB device and it freezes when trying 
+	to do so.</p>
+	
+	<a name="dischar"></a><h3>3.xviii. Disable the character in the 
+	Menu</h3>
+	<p>Allows you to disable the character that appears in the Menu (if he 
+	freaks you out!)</p>
+	
+	<a name="usewiimotelikegc"></a><h3>3.xix. Use Wiimote like GC controller</h3>
+	<p>Allows you to use the Wiimote like the Gamecube controller in the sense 
+	that you would use the Wiimote side ways and therefore not need the infrared 
+	sensor.</p>
+	
+	<a name="updatehbb"></a><h3>3.xix. Check for updates</h3>
+	<p>Allows you to enable or disable the option to check for Homebrew Browser 
+	updates.</p>	
+	
+	<a name="2ndserver"></a><h3>3.xxi. Use secondary server</h3>
+	<p>Allows you to bypass the primary CodeMii server and use the secondary server instead.</p>	
+	
+
+		</div>
+
+		<div class="back2top"><a href="#wrap" class="top">Back to Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr />
+
+<div id="wrap0">
+<a name="issues"></a><h2>4. Common issues with HBB</h2>
+
+	<div class="paragraph">
+	<div class="inner">
+	<div class="content">
+
+	<a name="network"></a><h3>4.i. Can&#39;t initialise network / Read errors</h3>
+
+	<p>Firstly make sure that your Wii can access the internet, you can check 
+	this by going to the Internet Channel or viewing the Weather/News channel 
+	and see if they work.<br>
+	If you do have internet access, when you are in the Homebrew Channel there 
+	is a little globe icon on the bottom right, if that&#39;s not lit up then 
+	homebrew will have issues initialising your Wii&#39;s network.</p>
+	<p>Occasionally you might also experience read errors, some of these might 
+	indicate the CodeMii website is down, other times if it keeps happening it 
+	may have to do with your Wii configuration.</p>Some suggestions include:<br/>
+	<ul>
+		<li>Restart HBB</li>
+		<li>Check that the <a href="http://www.codemii.com">CodeMii</a> website 
+		works</li>
+		<li>Make sure you have the <a href="http://www.codemii.com/download/">
+		latest version</a> of the Homebrew Browser</li>
+		<li>Changing your wireless channel</li>
+		<li>Changing your wireless encryption (e.g. using WEP instead of WPA)</li>
+		<li>Moving your Wii closer to your Wireless router</li>
+		<li>Changing USB slots on the Wii if you are using a USB LAN adapter</li>
+	</ul>
+
+	<a name="mount"></a><h3>4.ii. Issues mounting my SD or USB device</h3>
+
+	<p>Sometimes the Homebrew Browser won&#39;t be able to mount your SD/USB 
+	device. This usually happens either because that card isn&#39;t compatible with 
+	the way these devices are mounted or because the SD/USB device isn&#39;t 
+	formatted to FAT or FAT32.</p>Some suggestions include:<br/>
+	<ul>
+		<li>Check to see the write lock switch on the SD/USB device isn&#39;t set to 
+		on</li>
+		<li>Re-formatting your SD/USB device and do a chkdsk</li>
+		<li>Re-format your SD/USB device with the following command: "format h: /fs:fat /a:4096"</li>
+		<li>Check the
+		<a href="http://www.wiibrew.org/wiki/SD/SDHC_Card_Compatibility_Tests">
+		SD/SDHC compatibility page</a> at WiiBrew</li>
+	</ul>
+
+	<a name="ipadd"></a><h3>4.iii. Can&#39;t find the IP of CodeMii</h3>
+
+	<p>You may see a message appear in the Homebrew Browser saying that it can&#39;t 
+	find the IP address of CodeMii, this means it&#39;s failing the DNS lookup of
+	www.codemiii.com. There is also a stored IP address in HBB which the 
+	Homebrew Browser will use if it can&#39;t find the IP address of CodeMii.</p>You should try:<br/>
+	<ul>
+		<li>Changing your DNS servers</li>
+		<li>Adding a temporary DMZ on your router to point to the Wii&#39;s IP 
+		address</li>
+	</ul>
+
+	<a name="tryrepo"></a><h3>4.iv. Freezing when trying a repository</h3>
+
+	<p>There can be a number of reason by a repository might not work. Some 
+	reasons include that the repository website may be down or they may be 
+	having DNS issues, their homebrew list file doesn&#39;t exist or may be invalid, 
+	etc.</p>You should try:<br/>
+	<ul>
+		<li>Restarting HBB</li>
+		<li>Visiting the repositories website (if it&#39;s shown, the
+		<a href="http://www.codemii.com/hbb/repo_list.txt">repository list can 
+		be found here</a>) and checking the DNS is working correctly</li>
+		<li>Try the homebrew list file on the website (e.g. www.codemii.com/hbb/homebrew_browser/listv036.txt)</li>
+		<li>Contact the author of that repository</li>
+	</ul>
+
+	<a name="updatefail"></a><h3>4.v. Updating HBB fails</h3>
+
+	<p>Sometimes when updating the Homebrew Browser may fail, the most common 
+	reason is that the file size of the new boot.dol file doesn&#39;t match the 
+	expected size.</p>You should try:<br/>
+	<ul>
+		<li>Restarting HBB and try updating again</li>
+		<li>Take note of the error and <a href="#help">contact us</a></li>
+		<li>Manually update as a last resort</li>
+	</ul>
+
+
+	<a name="checkicon"></a><h3>4.vi. Freezing checking icons</h3>
+
+	<p>When the Homebrew Browser is checking icons, it can sometimes lead to the 
+	Homebrew Browser freezing or that the checking icons counter gets stuck.</p>You should try:<br/>
+	<ul>
+		<li>Restarting HBB</li>
+		<li>Removing the /apps/homebrew_browser/temp directory</li>
+		<li><a href="#help">Contact us</a> if it keeps occurring</li>
+	</ul>
+
+
+	<a name="weirdline"></a><h3>4.vii. Weird lines before loading the graphical user interface</h3>
+
+	<p>When the Homebrew Browser is loading the graphical user interface, you 
+	will see three lines with all sorts of colours shown. These lines are 
+	completely normal and they happen because HBB re-initialises the video. 
+	Eventually with future versions of HBB, it will load directly to the 
+	graphical user interface so you won&#39;t see these lines anymore.</p>
+
+	<a name="codedump"></a><h3>4.viii. Crashing to numbers screen (code dump)</h3>
+
+	<p>Occasionally the Homebrew Browser may suddenly show a screen that has 
+	lots of numbers on it, this is what&#39;s known as a code dump. All this means is that HBB 
+	has crashed and you should restart your Wii (or press A on the Gamecube 
+	controller). These code 
+	dumps will not affect your Wii.</p>
+	<p><b>Receiving code dump when downloading applications</b></p>
+	<p>Receiving code dumps when the Homebrew Browser is downloading 
+	applications is a known issue that we are working to resolve. This code dump 
+	happens randomly either when starting a download, when a download is running 
+	or when there are downloads that have been queued. You should just restart 
+	your Wii and load up HBB again.</p>
+	<p><b>Receiving code dump when loading Homebrew Browser</b></p>
+	If you receive a code dump when loading the Homebrew Browser you should try:<br/>
+	<ul>
+		<li>Restarting HBB</li>
+		<li>Removing the /apps/homebrew_browser/temp directory</li>
+		<li>Removing HBB and re-installing HBB</li>
+	</ul>
+	<p>If you receive a code dump at any other time, please do <a href="#help">let 
+	us know</a> about it and also include what you were doing when it happened 
+	and if you can reproduce the code dump.</p>
+	<a name="incorfreespace"></a><h3>4.ix. Free space detected is incorrect</h3>
+
+	<p>If you have a 4GB or larger SD/USB device, when the Homebrew Browser 
+	loads you may notice that the free space reported by the Homebrew Browser is 
+	incorrect. This may lead to problems with downloading if it says &quot;Not enough 
+	free space&quot;. If you receive this error, please turn off the <a href="#checkspace">
+	Check free space</a> setting.</p>
+
+	<a name="nodownload"></a><h3>4.x. Applications don&#39;t download / download button won&#39;t work</h3>
+
+	<p>You may experience that the Homebrew Browser no longer lets you download 
+	any application which is usually related to a controller problem. You should 
+	try unplugging any Gamecube controllers, nunchucks, dance pads, etc, 
+	anything other than the Wiimote, restart HBB and try again.</p>
+
+		</div>
+
+		<div class="back2top"><a href="#wrap" class="top">Back to Top</a></div>
+
+		<span class="corners-bottom"></span></div>
+	</div>
+
+	<hr />
+
+</div>
+<a name="help"></a><h2>5. Getting help with HBB</h2>
+
+	<div class="paragraph">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="content">
+
+	<p>There are various support channels for the Homebrew Browser.</p>
+	<ul>
+		<li>You can speak with other Wii users on 
+		<a href="http://www.mibbit.com/chat/">IRC</a> at #wiihelp on the EFNet 
+		server</li>
+	<li>You can post on the <a href="http://forum.wiibrew.org/">WiiBrew forums</a></li>
+	<li>You can post on the
+	<a href="http://www.wiibrew.org/wiki/Talk:Homebrew_Browser">WiiBrew Wiki</a></li>
+		<li>You can post on the <a href="http://www.codemii.com">CodeMii website</a></li>
+	<li>You can contact me at <a href="mailto:teknecal@gmail.com">
+	teknecal@gmail.com</a>, <a href="http://www.youtube.com/user/teknecal">
+	teknecal</a> on Youtube or teknecal on IRC</li>
+	</ul>
+
+		</div>
+
+		<div class="back2top"><a href="#wrap" class="top">Back to Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr />
+
+</body>
+</html>
